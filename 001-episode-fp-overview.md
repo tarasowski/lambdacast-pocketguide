@@ -37,11 +37,17 @@
 
 * There is a lot of benefits you can get through dynamic typing. But many benefits you can only get in static typed languages. 
 
-> Type system in Elm, Haskell is not getting in your way. It's not like in Java. Wher you need all these crazy patterns. Everything of all patterns in Gang of Four book  becomes obsolete. As Eric Elliot said, the only good thing is the part about object composition, that can be used and applied. 
+> Type system in Elm, Haskell is not getting in your way. It's not like in Java. Wher you need all these crazy patterns. Everything of all patterns in Gang of Four book  becomes obsolete. All patterns become just functions. (As Eric Elliot said, the only good thing from the GoF book is the part about object composition.)
 
 * In JavaScript you can solve everything with functions. You don't need all the patterns that are important in the imperative languages. (to me forget: forget the patterns)
 
 * A side effect when a function changes something outside of itself (it's scope). Like making http calls, priting to the console, writing to the database. You can't tell if a function was run. Any mutation of a state (global variable) is a side-effect. 
+
+* All programs start with side-effects (e.g. user input). Functional programs have side-effect, they just have uncontrolled side-effects. The downside of side-effects are hard to reason about it. Pure functions are easy to reason about. By definition they don't have side-effects. 
+
+* What we say control. The language can give you the direction what is pure and what is a side-effect. The side-effects are not bad, it just says you need to keep attention what's going on there. In Haskell IO happens in a type. A function that goes from a string to IO Int (IO means there is side-effect involved). In PureScript it's more specific it goes from Int to Console.log or Ajax Int. While in PureScript this is more general. In PureScript the system is describing what exactly happening. Also there is no way to mix pure with functions with side-effect (control side-effects). In other languages you need to have discipline if you want to mix pure with side-effects. 
+
+
 
 
 
