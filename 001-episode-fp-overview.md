@@ -25,3 +25,7 @@ length :: String -> Int
 
 * Pure function don't call impure functions. You're not pure if you're calling an impure function. 
 
+* In fp you have a lot of small functions that are used to in other OOP languages. 
+
+map :: Functor f => (a -> b) -> f a -> f b
+
