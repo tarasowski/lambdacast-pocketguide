@@ -47,7 +47,7 @@
 
 * What we say control. The language can give you the direction what is pure and what is a side-effect. The side-effects are not bad, it just says you need to keep attention what's going on there. In Haskell IO happens in a type. A function that goes from a string to IO Int (IO means there is side-effect involved). In PureScript it's more specific it goes from Int to Console.log or Ajax Int. While in PureScript this is more general. In PureScript the system is describing what exactly happening. Also there is no way to mix pure with functions with side-effect (control side-effects). In other languages you need to have discipline if you want to mix pure with side-effects. 
 
-* Use pure functions. Use objects as data types like records in Elm/Haskell/Sanctuary. Object only with getters. Not methods, no `this` no classes etc. 
+* Use pure functions. Use objects as data types like records in Elm/Haskell/Sanctuary. Object only with getters. Not methods, no `this`, no classes etc. 
 
 
 
