@@ -10,7 +10,7 @@
 
 * Pure a function that takes at least 1 thing. And it has to return something. If it takes arguments it doesn't change them. Any given set of inputs always produce the same output. You can't be rely on system clock, random generators etc. You pass the arguments as values and not by reference. You are passing the copies of them. 
 
-//length :: String -> Int
+* length :: String -> Int
 * A functions is a mapping from one set of values to another set of values. 
 
 * Total function: for every valid input you will get an output. It called a total function. All pure functions are total.
@@ -27,9 +27,9 @@
 
 * In fp you have a lot of small functions that are used to in other OOP languages. 
 
-//map :: Functor f => (a -> b) -> f a -> f b
-//filter : Filterable f => (a -> Bool) -> f a -> f a
-//reduce : Foldable f => (b -> a -> b) -> b -> f a -> b
+* map :: Functor f => (a -> b) -> f a -> f b
+* filter : Filterable f => (a -> Bool) -> f a -> f a
+* reduce : Foldable f => (b -> a -> b) -> b -> f a -> b
 
 
 
