@@ -30,6 +30,18 @@
   * map :: Functor f => (a -> b) -> f a -> f b
   * filter : Filterable f => (a -> Bool) -> f a -> f a
   * reduce : Foldable f => (b -> a -> b) -> b -> f a -> b
+  
+* map, filter, reduce share something in common. They take a function. map, filter, reduce is a higher order function, because it takes another function. 
+  
+* Lambda: a function that you define as a program is running. You can write the function inline. FP languages generally use a lot of lambdas. 
+
+* There is a lot of benefits you can get through dynamic typing. But many benefits you can only get in static typed languages. 
+
+> Type system in Elm, Haskell is not getting in your way. It's not like in Java. Wher you need all these crazy patterns. Everything of all patterns in Gang of Four book  becomes obsolete. As Eric Elliot said, the only good thing is the part about object composition, that can be used and applied. 
+
+* In JavaScript you can solve everything with functions. You don't need all the patterns that are important in the imperative languages. (to me forget: forget the patterns)
+
+* A side effect when a function changes something outside of itself (it's scope). Like making http calls, priting to the console, writing to the database. You can't tell if a function was run. Any mutation of a state (global variable) is a side-effect. 
 
 
 
