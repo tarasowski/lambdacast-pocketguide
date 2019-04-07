@@ -28,4 +28,8 @@ length :: String -> Int
 * In fp you have a lot of small functions that are used to in other OOP languages. 
 
 map :: Functor f => (a -> b) -> f a -> f b
+filter : Filterable f => (a -> Bool) -> f a -> f a
+reduce : Foldable f => (b -> a -> b) -> b -> f a -> b
+
+
 
